@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Add Animal</title>
+
+    <!-- CSS -->
+    <style>
+        #hero
+        {
+            color: white;
+        	font-family: arial;
+            height: 80vh;
+            background:linear-gradient(to bottom right,#00aaff,#aaffff);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* justify-content: center; */
+        }
+        #selectPic{
+          margin-top: -120px;
+          margin-left: 500px;
+          width: 170px;
+          height: 120px;
+          
+        }
+    </style>
+
+  </head>
+  <body style="background-color: aquamarine;">
+
+    <!-- NavBar Item -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="col-md-4"></div>
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><b>Pets Chance</b></a>
+          <a class="navbar-brand" href="index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="addAnimal.html">Add Animal <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+    </div>
+      </nav>
+      
+ <!-- Form  -->
+<div id="hero" class="container" style="">
+    <center><h1>Add Animals</h1><hr></center>
+
+    <!-- form -->
+    <form onload="setUpListener()">
+        <div class="form-group">
+          <label for="AnimalName">Animal Name</label>
+          <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter animal name">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Description</label>
+            <textarea class="form-control" id="description" placeholder="Description here..." rows="2"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlFile1">Select Image</label>
+            <input type="file" class="form-control-file" id="image">
+          </div>
+        
+        <button type="submit" id="btnSubmit" class="btn btn-outline-info">Submit</button>
+      </form>
+
+      <!-- selected picture -->
+      <div id="selectPic"> </div>
+      
+
+</div>
+
+<!-- Container -->
+<div id="" class="container" style="">
+
+   <!-- Show Animals -->
+  <div id="showCards" class="row">  </div>
+
+</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
